@@ -74,12 +74,11 @@ You may write some markdown here to give a more in-depth description of the piec
 
 ```sh
 cd cbl-website
-hugo new publications/title-of-publication-year.md
+hugo new publications/author-journal-year.md
 ```
 
-Then edit the file just created in `content/publications/[...].md`.
+Note that the exact file name does not matter, we only suggest e.g. hennequin-neuron-2018.md as a way of keeping our files tidy.
+Then edit the file just created in `content/publications/[...].md` and populate all the metadata.
 Currently, only BLG publications are rendered in the individual labs' websites (Ahmadian, Hennequin, and Lengyel).
 MLG publications are maintained [here](http://mlg.eng.cam.ac.uk).
-
-
 
