@@ -1,0 +1,13 @@
+{{ partial "header" . }}
+
+<div><a href="javascript:history.back()" style="font-size: 200%; color: #aaaaaa;"><i class="fi-ctllxm-chevron"></i></a>
+</div>
+<br>
+
+{{ $job := (.RelPermalink | path.Base) }}
+{{ with (.Site.GetPage (path.Join "/vacancies" $job )) }}
+<h1> {{ .Title }} </h1>
+<div class="text-justify">{{ .Content }} </div>
+{{ end }}
+
+{{ partial "footer.html" . }}

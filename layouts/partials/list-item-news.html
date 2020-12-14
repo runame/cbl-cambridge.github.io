@@ -1,0 +1,20 @@
+{{ $localscratch := newScratch }}
+{{ if (eq .lab "cbl") }}
+{{ $localscratch.Set "link" (.context.RelPermalink | path.Dir) }}
+{{ else }}
+{{ $localscratch.Set "link" (path.Join "/" .lab (.context.RelPermalink | path.Dir )) }}
+{{ end }}
+{{ $link := $localscratch.Get "link" }}
+
+<div class="carousel-cell">
+    <div class="date">
+    <span class="date-span">
+        {{ dateFormat "January 2006" .context.Params.date }}
+    </span>
+    </div>
+    <div class="blurb"><a href="{{ $link }}">{{ markdownify .context.Params.title }}</a></div>
+    <div class="blurb">
+        {{ markdownify .context.Params.blurb }}
+    </div>
+</div>
+

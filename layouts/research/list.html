@@ -1,0 +1,14 @@
+{{ partial "header" . }}
+
+<div class="tag_list">
+  <div class="tag"><a href="#blg">Biological Learning</a></div>
+  <div class="tag"><a href="#mlg">Machine Learning</a></div>
+</div>
+
+<div>
+  {{ range .Data.Pages }}
+  {{ partial "list-item-research" . }}
+  {{ end }}
+</div>
+
+{{ partial "footer" . }}

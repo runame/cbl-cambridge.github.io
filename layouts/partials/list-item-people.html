@@ -1,0 +1,36 @@
+{{ $localscratch := newScratch }}
+
+{{ if (eq .lab "cbl") }}
+{{ $localscratch.Set "link" (.context.RelPermalink | path.Dir) }}
+{{ else }}
+{{ $localscratch.Set "link" (path.Join "/" .lab (.context.RelPermalink | path.Dir )) }}
+{{ end }}
+{{ $link := $localscratch.Get "link" }}
+
+{{ $crsid := (path.Base $link) }}
+{{ $photo_base := (path.Join "/people" $crsid ) }}
+<!-- Photos should have filenames (crsid).jpeg, (crsid).jpg, (crsid).png -->
+<!-- If photo doesn't exist, throw a warning -->
+{{ if (fileExists (printf "/static/people/%s%s" $crsid ".png")) }}
+{{ $localscratch.Set "photo" (printf "/people/%s%s" $crsid ".png") }}
+{{ else if (fileExists (printf "/static/people/%s%s" $crsid ".jpg")) }}
+{{ $localscratch.Set "photo" (printf "/people/%s%s" $crsid ".jpg") }}
+{{ else if (fileExists (printf "/static/people/%s%s" $crsid ".jpeg")) }}
+{{ $localscratch.Set "photo" (printf "/people/%s%s" $crsid ".jpeg") }}
+{{ else }}
+{{ warnf "%s's photo does not exist or has unsupported file name/extensions. Using photo of serious Owl in it's place..." $crsid }}
+{{ $localscratch.Set "photo" (path.Join "/people" "serious-owl.jpeg")}}
+{{ end }}
+
+{{ $photo := $localscratch.Get "photo" }}
+
+<a href="{{ $link }}">
+    <div class="img-cropper"><img src="{{ $photo }}" /></div>
+    {{ $crsid := (path.Base $link) }}
+    {{ if (eq .context.Params.firstname "Bored Yann") }}
+    {{ warnf "%s's information is still missing" $crsid }}
+    <p>{{ $crsid }}</p>
+    {{ else }}
+    <p>{{ .context.Params.Title }}</p>
+    {{ end }}
+</a>

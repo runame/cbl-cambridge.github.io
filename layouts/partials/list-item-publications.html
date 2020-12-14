@@ -1,0 +1,58 @@
+{{ $localscratch := newScratch }}
+{{ if (eq .lab "cbl") }}
+{{ $localscratch.Set "link" (.context.RelPermalink | path.Dir) }}
+{{ else }}
+{{ $localscratch.Set "link" (path.Join "/" .lab (.context.RelPermalink | path.Dir )) }}
+{{ end }}
+{{ $link := $localscratch.Get "link" }}
+
+{{ $localscratch.Set "crsids" (slice)}}
+<!-- Get a list of csrids -->
+{{ $people := .context.Site.GetPage "/people" }}
+{{ with $people}}
+{{ range .Data.Pages }}
+{{ $crsid := (path.Base .RelPermalink ) }}
+{{ $localscratch.Set "crsids" ($localscratch.Get "crsids" | append $crsid)}}
+{{ end }}
+{{ end }}
+
+{{ $crsids := $localscratch.Get "crsids" }}
+{{ $authors_raw := .context.Params.authors }}
+{{ $localscratch.Set "authors" slice }}
+<!-- range -->
+{{ range $authors_raw }}
+<!-- if -->
+{{ $raw := . }}
+{{ $trimmed := (delimit (findRE "^[A-Za-z0-9]+" .) "" "") | plainify }}
+{{ if (in $crsids $trimmed ) }}
+{{ $x := ($people.GetPage $trimmed ) }}
+{{ $first := (delimit (findRE "[A-Z]" $x.Params.firstname) "") | plainify }}
+{{ $name :=  (printf "%s %s" $first $x.Params.lastname) }}
+{{ $processed := replace $raw $trimmed $name }}
+{{ $localscratch.Set "authors" ($localscratch.Get "authors" | append $processed )}}
+<!-- else -->
+{{ else }}
+{{ $localscratch.Set "authors" ($localscratch.Get "authors" | append . )}}
+<!-- end -->
+{{ end }}
+<!-- end -->
+{{ end }}
+<!-- get authors from scratch -->
+{{ $authors := $localscratch.Get "authors"}}
+
+
+<a class="flex-item{{ with .context.Params.illustration }}-double{{ end}}" href="{{ $link }}">
+<div style="display: flex; flex-flow: row wrap; align-items: flex-start;">
+{{ with .context.Params.illustration }}
+<div class="publication-illustration">
+     <img width="100%" src="/publications/{{ . }}" />
+</div>
+{{ end }}
+<div class="publication-block">
+<div class="flex-item-bar"></div>
+<div>{{ markdownify .context.Title }}</div>
+<div class="publication-author" style="margin-top: 0.2em;">{{ delimit $authors ", " " and " }}</div>
+<div class="publication-journal">{{ .context.Params.publication | markdownify }}, <span style="color: #000;">{{ .context.Params.year }}</span></div>
+</div>
+</div>
+</a>

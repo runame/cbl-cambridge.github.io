@@ -1,0 +1,8 @@
+{{ $localscratch := newScratch }}
+{{ if (eq .lab "cbl") }}
+{{ $localscratch.Set "link" (.context.RelPermalink | path.Dir) }}
+{{ else }}
+{{ $localscratch.Set "link" (path.Join "/" .lab (.context.RelPermalink | path.Dir )) }}
+{{ end }}
+{{ $link := $localscratch.Get "link" }}
+<h3><a href="{{ $link }}">{{ .context.Params.title }}</a></h3>

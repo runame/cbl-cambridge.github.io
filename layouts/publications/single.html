@@ -1,0 +1,72 @@
+{{ partial "header" . }}
+{{ $localscratch := newScratch }}
+
+
+        <div><a href="javascript:history.back()" style="font-size: 200%; color: #aaaaaa;"><i class="fi-ctllxm-chevron"></i></a>
+        </div>
+        <br>
+
+        {{ $paper := (.RelPermalink | path.Base) }}
+        {{ with (.Site.GetPage (path.Join "/publications" $paper )) }}
+        <div class="publication-title">{{ .Title }}</div>
+        <span style="color: #aa0000;">{{ .Params.publication | markdownify }}</span>
+        ({{ .Params.year }})
+
+        {{ $localscratch.Set "crsids" (slice)}}
+        <!-- Get a list of csrids -->
+        {{ $people := .Site.GetPage "/people" }}
+        {{ with $people}}
+        {{ range .Data.Pages }}
+        {{ $crsid := (path.Base .RelPermalink ) }}
+        {{ $localscratch.Set "crsids" ($localscratch.Get "crsids" | append $crsid)}}
+        {{ end }}
+        {{ end }}
+
+        {{ $crsids := $localscratch.Get "crsids" }}
+        {{ $authors_raw := .Params.authors }}
+        {{ $localscratch.Set "authors" slice }}
+        <!-- range -->
+        {{ range $authors_raw }}
+        <!-- if -->
+        {{ $raw := . }}
+        {{ $trimmed := (delimit (findRE "^[A-Za-z0-9]+" .) "" "") | plainify }}
+        {{ if (in $crsids $trimmed ) }}
+        {{ $x := ($people.GetPage $trimmed ) }}
+        {{ $first := (delimit (findRE "[A-Z]" $x.Params.firstname) "") | plainify }}
+        {{ $name :=  (printf "%s %s" $first $x.Params.lastname) }}
+        {{ $processed := replace $raw $trimmed $name }}
+        {{ $localscratch.Set "authors" ($localscratch.Get "authors" | append $processed )}}
+        <!-- else -->
+        {{ else }}
+        {{ $localscratch.Set "authors" ($localscratch.Get "authors" | append . )}}
+        <!-- end -->
+        {{ end }}
+        <!-- end -->
+        {{ end }}
+        <!-- get authors from scratch -->
+        {{ $authors := $localscratch.Get "authors"}}
+
+        {{ if (isset .Params "authors") }}
+        <br>
+        {{ delimit $authors ", " ", and " }}
+        <br>
+        {{ else }}
+        {{ errorf "%s does not have an author" .Params.Title }}
+        {{ end }}
+        
+        <br>
+
+        {{ with .Params.link }}
+         <a href="{{ . }}"><i class="fi-xtluxl-external-link"></i></a>
+        {{ end }}
+        {{ with .Params.file }} <a href="{{ path.Join "/publications" . }}"><i class="fi-xnluxl-file-pdf-thin"></i></a> {{ end }}
+        {{ with .Params.code }} <a href="{{ . }}"><i class="fi-xnluxl-code"></i></a> {{ end }}
+        {{ with .Content }}
+        <br>
+        <br>
+        <h4>Abstract</h4>
+        <div class="text-justify">{{ . }}</div>
+        {{ end }}
+{{ end }}
+
+{{ partial "footer.html" . }}

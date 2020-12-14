@@ -1,0 +1,165 @@
+disableKinds = ["RSS"]
+baseURL = "https://cbl.eng.cam.ac.uk"
+languageCode = "en"
+title = "Computational and Biological Learning Lab"
+config = "config.toml"
+
+[params]
+    author = "Ta-Chu Kao"
+    profilePic = ""
+    accent = "#330088"
+    githubUsername = "cbl"
+    showBorder = true
+    backgroundColor = "white"
+    fontSmall = "Alegreya Sans"
+    fontBig = "Alegreya"
+    theme-color = '#2167a0'
+    top-image = '/kings-college-chapel.jpg'
+
+    [params.hennequin]
+    top-image = "/hennequin/front.jpg"
+
+
+[markup.goldmark.renderer]
+unsafe= true
+
+
+[menu]
+    [[menu.cbl]]
+        url = "/"
+        name = "CBL HOME"
+        pre = "<img style='float: left; padding: 0em; margin: 0em; height: 2em; transform: translateY(-10%)' src='/favicon.svg'/>"
+        weight = 1
+
+    [[menu.cbl]]
+        url = ""
+        name = "GROUPS"
+        pre = "<i class='fi-xnluxl-team-solid'></i>"
+        weight = 2
+
+    [[menu.cbl]]
+        url = "/people/"
+        name = "PEOPLE"
+        pre = "<i class='fi-xnsuxl-user-circle-solid'></i>"
+        weight = 3
+
+    [[menu.cbl]]
+        url = "/vacancies/"
+        name = "VACANCIES"
+        pre = "<i class='fi-xnsuxl-file-cv-solid'></i>"
+        weight = 4 
+
+    [[menu.cbl]]
+        url = "/contact/"
+        name = "CONTACT"
+        pre = "<i class='fi-xnsuxl-envelope-solid'></i>"
+        weight = 5
+
+    [[menu.hennequin]]
+        url = "/"
+        name = "CBL HOME"
+        pre = "<img style='float: left; padding: 0em; margin: 0em; height: 2em; transform: translateY(-10%)' src='/favicon.svg'/>"
+        weight = 1
+
+    [[menu.hennequin]]
+        url = ""
+        name = "HENNEQUIN GROUP"
+        pre = ""
+        weight = 2
+
+    [[menu.hennequin]]
+        url = "/hennequin/"
+        name = "HOME"
+        pre = "<i class='fi-xnsuxl-home-solid'></i>"
+        weight = 3
+
+    [[menu.hennequin]]
+        url = "/hennequin/people/"
+        name = "PEOPLE"
+        pre = "<i class='fi-xnsuxl-user-circle-solid'></i>"
+        weight = 4
+
+    [[menu.hennequin]]
+        url = "/hennequin/publications/"
+        name = "PUBLICATIONS"
+        pre = "<i class='fi-xwsxxl-graduation-cap-solid'></i>"
+        weight = 5
+
+    [[menu.hennequin]]
+        url = "/hennequin/vacancies/"
+        name = "VACANCIES"
+        pre = "<i class='fi-xnsuxl-file-cv-solid'></i>"
+        weight = 6 
+
+
+    [[menu.lengyel]]
+        url = "/"
+        name = "CBL HOME"
+        pre = "<img style='float: left; padding: 0em; margin: 0em; height: 2em; transform: translateY(-10%)' src='/favicon.svg'/>"
+        weight = 1
+
+    [[menu.lengyel]]
+        url = ""
+        name = "LENGYEL GROUP"
+        pre = ""
+        weight = 2
+
+    [[menu.lengyel]]
+        url = "/lengyel/"
+        name = "HOME"
+        pre = "<i class='fi-xnsuxl-home-solid'></i>"
+        weight = 3
+
+    [[menu.lengyel]]
+        url = "/lengyel/people/"
+        name = "PEOPLE"
+        pre = "<i class='fi-xnsuxl-user-circle-solid'></i>"
+        weight = 4
+
+    [[menu.lengyel ]]
+        url = "/lengyel/publications/"
+        name = "PUBLICATIONS"
+        pre = "<i class='fi-xwsxxl-graduation-cap-solid'></i>"
+        weight = 5
+
+    [[menu.lengyel]]
+        url = "/lengyel/vacancies/"
+        name = "VACANCIES"
+        pre = "<i class='fi-xnsuxl-file-cv-solid'></i>"
+        weight = 6 
+
+    [[menu.ahmadian]]
+        url = "/"
+        name = "CBL HOME"
+        pre = "<img style='float: left; padding: 0em; margin: 0em; height: 2em; transform: translateY(-10%)' src='/favicon.svg'/>"
+        weight = 1
+
+    [[menu.ahmadian]]
+        url = ""
+        name = "AHMADIAN GROUP"
+        pre = ""
+        weight = 2
+
+    [[menu.ahmadian]]
+        url = "/ahmadian/"
+        name = "AHMADIAN GROUP"
+        pre = "<i class='fi-xnsuxl-home-solid'></i>"
+        weight = 3
+
+    [[menu.ahmadian]]
+        url = "/ahmadian/people/"
+        name = "PEOPLE"
+        pre = "<i class='fi-xnsuxl-user-circle-solid'></i>"
+        weight = 4
+
+    [[menu.ahmadian ]]
+        url = "/ahmadian/publications/"
+        name = "PUBLICATIONS"
+        pre = "<i class='fi-xwsxxl-graduation-cap-solid'></i>"
+        weight = 5
+
+    [[menu.ahmadian ]]
+        url = "/ahmadian/vacancies/"
+        name = "VACANCIES"
+        pre = "<i class='fi-xnsuxl-file-cv-solid'></i>"
+        weight = 6 

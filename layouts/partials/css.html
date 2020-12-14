@@ -1,0 +1,73 @@
+<!-- main -->
+{{ $style := resources.Get "css/main.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS | minify | fingerprint }} 
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+<!-- for new carousels -->
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/flickity.css">
+
+<!-- google fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ .Site.Params.fontBig }}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ .Site.Params.fontSmall }}">
+
+<script defer src="{{ .Site.BaseURL }}/css/friconix.js"></script>
+
+<script src="{{ .Site.BaseURL }}/css/flickity.pkgd.min.js"></script>
+
+<script>
+function menu() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className = "topnav responsive";
+  } else {
+    x.className = "topnav";
+  }
+  var x = document.getElementById("myGroups");
+  var y = document.getElementById("myGroupsResize");
+  x.className = "menu-item dropdown-hidden";
+  y.style.maxWidth = "0em";
+  y.style.maxHeight = "0em";
+  y.style.opacity = "0%";
+}
+
+function menu_off() {
+  var x = document.getElementById("myTopnav");
+  x.className = "topnav";
+}
+
+function groups() {
+  var x = document.getElementById("myGroups");
+  var y = document.getElementById("myGroupsResize");
+  if (x.className === "menu-item dropdown-hidden") {
+    x.className = "menu-item dropdown";
+    y.style.maxWidth = "15em";
+    y.style.maxHeight = "15em";
+    y.style.opacity = "100%";
+  } else {
+    x.className = "menu-item dropdown-hidden";
+    y.style.maxWidth = "0em";
+    y.style.maxHeight = "0em";
+    y.style.opacity = "0%";
+  }
+}
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var topbutton = document.getElementById("myTopButton");
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    topbutton.style.visibility = "visible";
+    topbutton.style.transform = "translateX(50%)";
+  } else {
+    topbutton.style.visibility = "hidden";
+    topbutton.style.transform = "translateX(400%)";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>

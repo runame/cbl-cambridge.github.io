@@ -1,0 +1,14 @@
+{{ partial "header" . }}
+
+  <h1 id="contact-us">{{ .Title }}</h1>
+  <h4>{{ .Params.address }}</h4>
+  <h4>
+    <a href="mailto:{{ .Params.email }}"><i class="fi-xnsuxl-envelope-solid" style="padding-right: 1em;"></i> {{ .Params.email }}</a>
+    <div><i class="fi-xnlrxl-phone-solid" style="padding-right: 1em;"></i>{{ .Params.phone }}</div>
+  </h4>
+
+  <br>
+  <h1 id="directions-to-cbl">Visit us</h1>
+  <div class="text-justify">{{ .Content }} </div>
+
+  {{ partial "footer" . }}

@@ -1,0 +1,74 @@
+{{ $localscratch := newScratch }}
+{{ partial "header" . }}
+
+<div><a href="javascript:history.back()" style="font-size: 200%; color: #aaaaaa;"><i class="fi-ctllxm-chevron"></i></a>
+</div>
+<br>
+
+{{ $crsid := (.RelPermalink | path.Base) }}
+{{ $photo_base := (path.Join "/people" $crsid ) }}
+<!-- Photos should have filenames (crsid).jpeg, (crsid).jpg, (crsid).png -->
+<!-- If photo doesn't exist, throw a warning -->
+{{ if (fileExists (printf "/static/people/%s%s" $crsid ".png")) }}
+{{ $localscratch.Set "photo" (printf "/people/%s%s" $crsid ".png") }}
+{{ else if (fileExists (printf "/static/people/%s%s" $crsid ".jpg")) }}
+{{ $localscratch.Set "photo" (printf "/people/%s%s" $crsid ".jpg") }}
+{{ else if (fileExists (printf "/static/people/%s%s" $crsid ".jpeg")) }}
+{{ $localscratch.Set "photo" (printf "/people/%s%s" $crsid ".jpeg") }}
+{{ else }}
+{{ warnf "%s's photo does not exist or has unsupported file name/extensions. Using photo of serious Owl in it's place..." $crsid }}
+{{ $localscratch.Set "photo" (path.Join "/people" "serious-owl.jpeg")}}
+{{ end }}
+
+{{ $photo := $localscratch.Get "photo" }}
+
+{{ with .Site.GetPage (path.Join "/people" $crsid) }}
+
+<div class="img-cropper" style="filter: none;"><img src="{{ $photo }}" /></div>
+<div>
+{{ if (eq .Params.firstname "Bored Yann") }}
+{{ warnf "%s's information is still missing" $crsid }}
+<p>{{ $crsid }}</p>
+{{ else }}
+<p>{{ .Params.Title }}</p>
+{{ end }}
+{{ with .Params.email }}
+<a href="mailto:{{ . }}"><p><i class="fi-xnsuxl-envelope-solid" style="padding-right: 1em;"></i>{{ . }}</p></a>
+{{ end }}
+<p>
+{{ if (isset .Params "website") }}
+{{ if (in (slice "faculty" "group_leader" "affiliate") .Params.status) }}
+<a class="button" href="{{ .Params.website  }}">LAB WEBSITE</a>
+{{ else }}
+<a class="button" href="{{ .Params.website }}">PERSONAL WEBSITE</a>
+{{ end }}
+{{ end }}
+
+{{ with .Params.github }}
+<a href="https://github.com/{{ . }}">
+    <i class="fi-xwsxxl-github" style="padding: 0.3em;"></i>
+</a>
+{{ end }}
+
+{{ with .Params.google_scholar }}
+<a href="{{ . }}">
+    <i class="fi-xwsxxl-graduation-cap-solid" style="padding: 0.3em;"></i>
+</a>
+{{ end }}
+{{ with .Params.twitter }}
+<a href="https://twitter.com/{{ . }}">
+    <i class="fi-xnsuxl-twitter" style="padding: 0.3em;"></i>
+</a>
+{{ end }}
+{{ with .Params.linkedin }}
+<a href="https://linkedin.com/in/{{ . }}">
+    <i class="fi-snsuxl-linkedin" style="padding: 0.3em;"></i>
+</a>
+{{ end }}
+</p> 
+</div>
+<div class="text-justify">{{ .Content }} </div>
+
+{{ end }}
+
+{{ partial "footer.html" . }}

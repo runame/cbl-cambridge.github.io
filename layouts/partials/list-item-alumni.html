@@ -1,0 +1,12 @@
+{{ $.Scratch.Set "link" .RelPermalink }}
+{{ $prms := .Params }}
+
+{{ with .Params.website }}<a style="display: block;" href="{{ . }}">{{ end }}
+<div class="flex-item-bar"></div>
+{{ .Params.firstname }} {{ .Params.lastname }}
+{{ with .Params.year_left }}
+<span style="color: gray;">, {{ $prms.year_arrived }} ─ {{. }}
+{{ end}}
+<br>
+{{ with .Summary }} <span style="color: gray;"> ({{ . }}) </span> {{ end }}
+{{ with .Params.website }} </a> {{ end }}

@@ -1,0 +1,26 @@
+{{ $.Scratch.Set "link" .RelPermalink }}
+{{ with .Params.redirect }} {{ $.Scratch.Set "link" . }} {{ end }}
+
+<div id="{{ .Params.group_label }}">
+    <a href="{{ .Scratch.Get "link" }}">
+        {{ with .Params.link_to_logo }}
+        <div>
+            <img border-radius="8px" style="height: 15em;" src="{{ . }}" />
+        </div>
+        {{ end }}
+    </a>
+
+    <h1 color="black">
+        <a href="{{ .Scratch.Get "link" }}">
+            {{.Params.Title}}
+        </a>
+    </h1>
+    <div class="text-justify">{{ .Content }} </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>

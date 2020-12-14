@@ -1,0 +1,14 @@
+{{ $.Scratch.Set "link" .RelPermalink }}
+{{ with .Params.link }} {{ $.Scratch.Set "link" . }} {{ end }}
+
+<h3>
+{{ if (isset .Params "redirect") }}
+<a href="{{ .Params.redirect }}">
+    {{ .Params.Title }} 
+</a>
+{{ else }}
+<a href="{{ .Scratch.Get "link" }}">
+    {{ .Params.Title }} 
+</a>
+</h3>
+{{ end }}

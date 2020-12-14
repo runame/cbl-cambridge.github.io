@@ -1,0 +1,15 @@
+{{ partial "header" . }}
+
+    <div><a href=".." style="font-size: 200%; color: #aaaaaa;"><i class="fi-ctllxm-chevron"></i></a></div>
+    <br>
+
+    {{ with .Params.link_to_logo }}
+    <div><img border-radius="8px" style="height: 15em;" src="../{{ . }}"/></div>
+    {{ end }}
+
+    <h1> {{.Title}} </h1>
+
+    <div class="text-justify">{{ .Content }} </div>
+
+
+{{ partial "footer.html" . }}

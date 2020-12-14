@@ -1,0 +1,78 @@
+{{ with .Site.GetPage "/people" }}
+<div class="tag_list flex-container person-type">
+    <a class="tag" href="#postdocs">Postdocs</a>
+    <a class="tag" href="#grad-students">Graduate Students</a>
+    <a class="tag" href="#visitors">Visitors</a>
+    <a class="tag" href="#research-assistants">Research Assistants</a>
+    <a class="tag" href="#admin">Admin support</a>
+    <a class="tag" href="#alumni">Alumni</a>
+</div>
+
+
+{{ $postdocs := ((where (where (where .Data.Pages "Params.status" "in" "3") "Params.still_around" true) "Params.lab" "in" ($.Scratch.Get "lab")).ByParam "year_arrived") }}
+{{ with $postdocs }}
+<h1 id="postdocs">Postdocs</h1>
+<div class="flex-container">
+    {{ range . }}
+    {{ if in .Params.labs ($.Scratch.Get "lab") }}
+    <div class="person"> {{ partial "list-item-people" . }} </div>
+    {{ end }}
+    {{ end }}
+</div>
+<br>
+{{ end }}
+
+<!--  -->
+<h1 id="grad-students">Graduate Students</h1>
+<div class="flex-container">
+    {{ range ((where (where .Data.Pages "Params.status" "in" "4") "Params.still_around" true).ByParam "year_arrived") }}
+    {{ if in .Params.labs ($.Scratch.Get "lab") }}
+    <div class="person"> {{ partial "list-item-people" . }} </div>
+    {{ end }}
+    {{ end }}
+</div>
+<br>
+<!--  -->
+<h1 id="visitors">Visitors</h1>
+<div class="flex-container">
+    {{ range ((where (where .Data.Pages "Params.status" "in" "5") "Params.still_around" true).ByParam "year_arrived") }}
+    {{ if in .Params.labs ($.Scratch.Get "lab") }}
+    <div class="person"> {{ partial "list-item-people" . }} </div>
+    {{ end }}
+    {{ end }}
+</div>
+<br>
+<!--  -->
+<h1 id="research-assistants">Research Assistants</h1>
+<div class="flex-container">
+    {{ range ((where (where .Data.Pages "Params.status" "in" "6") "Params.still_around" true).ByParam "year_arrived") }}
+    {{ if in .Params.labs ($.Scratch.Get "lab") }}
+    <div class="person"> {{ partial "list-item-people" . }} </div>
+    {{ end }}
+    {{ end }}
+</div>
+<br>
+<!--  -->
+
+
+{{ $admin := ((where (where .Data.Pages "Params.status" "in" "7") "Params.still_around" true).ByParam "year_arrived") }}
+{{ with $admin }}
+<h1 id="admin">Admin Support</h1>
+<div class="flex-container">
+    {{ range . }}
+    <div class="person"> {{ partial "list-item-people" . }} </div>
+    {{ end }}
+</div>
+<br>
+{{ end }}
+
+<!--  -->
+<h1 id="alumni">Alumni</h1>
+<div class="flex-container">
+    {{ range ((where (where .Data.Pages "Params.status" "in" "0123456") "Params.still_around" false).ByParam "year_arrived").Reverse }}
+    {{ if in .Params.labs ($.Scratch.Get "lab") }}
+    <div class="person"> {{ partial "list-item-alumni" . }} </div>
+    {{ end }}
+    {{ end }}
+</div>
+{{ end }}

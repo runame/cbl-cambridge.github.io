@@ -1,0 +1,10 @@
+{{ partial "header" . }}
+    <!-- <h1 style="font-size: 300%; margin-top: 0;">{{ .Title }}</h1> -->
+    <div class="text-justify">
+    {{ .Content }}
+    </div>
+    <br>
+    <hr> 
+    {{ partial "news.html" . }}
+</div>
+{{ partial "footer" . }}

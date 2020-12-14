@@ -1,0 +1,8 @@
+{{ partial "header" . }}
+{{$lab := .Scratch.Get "lab" }}
+{{ with .Site.GetPage "/vacancies" }}
+{{ range (where .Data.Pages "Params.labs" "intersect" (slice $lab)) }}
+{{ partial "list-item-vacancies" (dict "context" . "lab" $lab) }}
+{{ end }}
+{{ end }}
+{{ partial "footer" . }}

@@ -1,0 +1,171 @@
+{{ partial "header" . }}
+
+<!-- see "get_lab.html and header.html" for definition of lab -->
+{{ $lab := $.Scratch.Get "lab" }}
+
+{{ with .Site.GetPage "/people" }}
+
+{{ $faculty := ((where (where (where .Data.Pages "Params.status" "in" "faculty") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "year_arrived") }}
+
+{{ $group_leaders := ((where (where (where .Data.Pages "Params.status" "in" "group_leader") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "year_arrived") }}
+
+{{ $affiliates := ((where (where (where .Data.Pages "Params.status" "in" "affiliate") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "year_arrived") }}
+
+{{ $postdocs := ((where (where (where .Data.Pages "Params.status" "in" "postdoc") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "year_arrived") }}
+
+{{ $students := ((where (where (where .Data.Pages "Params.status" "in" "student") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "year_arrived") }}
+
+{{ $support := ((where (where (where .Data.Pages "Params.status" "in" "support") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "year_arrived") }}
+
+{{ $visitors := ((where (where (where .Data.Pages "Params.status" "in" "visitor") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "year_arrived") }}
+
+{{ $admin := ((where (where (where .Data.Pages "Params.status" "in" "admin") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "year_arrived") }}
+
+{{ $alumni := ((where (where (where .Data.Pages "Params.status" "in" (slice "faculty" "group_leader" "affiliate" "postdoc" "grad_student")) "Params.labs" "intersect" (slice $lab)) "Params.still_around" false).ByParam "year_arrived") }}
+
+
+<!-- check that status of all people are recognized -->
+
+{{ $people_with_wrong_status := ((where (where .Data.Pages "Params.status" "not in" (slice "faculty" "group_leader" "affiliate" "postdoc" "student" "visitor" "support" "admin")) "Params.still_around" true).ByParam "year_arrived") }}
+
+{{ with $people_with_wrong_status }}
+{{ range . }}
+{{ errorf "%s (%s)' status not recognized" .Title .File }}
+{{ end }}
+{{ end }}
+
+{{ if (eq $lab "cbl") }}
+
+{{ with $faculty }}
+<h1 id="faculty">Faculty</h1>
+<div class="flex-container">
+    {{ range $faculty}}
+    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab) }} </div>
+    {{ end }}
+</div>
+{{ end }}
+
+{{ with $group_leaders }}
+<h1 id="group_leaders">Group Leaders</h1>
+<div class="flex-container">
+    {{ range . }}
+    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab) }} </div>
+    {{ end }}
+</div>
+{{ end }}
+
+{{ with $affiliates }}
+<h1 id="affiliates">Affiliates</h1>
+<div class="flex-container">
+    {{ range . }}
+    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab)}} </div>
+    {{ end }}
+</div>
+{{ end }}
+
+{{ with $postdocs }}
+<h1 id="postdocs">Postdocs</h1>
+<div class="flex-container">
+    {{ range . }}
+    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab) }} </div>
+    {{ end }}
+</div>
+{{ end }}
+
+{{ with $students }}
+<h1 id="students">Graduate Students</h1>
+<div class="flex-container">
+    {{ range . }}
+    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab) }} </div>
+    {{ end }}
+</div>
+{{ end }}
+
+{{ with $visitors }}
+<h1 id="visitors">Visitors</h1>
+<div class="flex-container">
+    {{ range . }}
+    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab) }} </div>
+    {{ end }}
+</div>
+{{ end }}
+
+{{ with $support }}
+<h1 id="support">Research Support</h1>
+<div class="flex-container">
+    {{ range . }}
+    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab) }} </div>
+    {{ end }}
+</div>
+{{ end }}
+
+{{ with $admin }}
+<h1 id="admin">Admin Support</h1>
+<div class="flex-container">
+    {{ range . }}
+    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab) }} </div>
+    {{ end }}
+</div>
+{{ end }}
+
+{{ with $alumni }}
+<h1 id="alumni">Alumni</h1>
+<div class="flex-container-left">
+    {{ range . }}
+    <div class="flex-item"> {{ partial "list-item-alumni" . }} </div>
+    {{ end }}
+</div>
+{{ end }}
+
+{{ else }}   <!-- if not CBL -->
+
+<h1 id="alumni">Group members</h1>
+<div class="flex-container">
+
+{{ with $faculty }}
+    {{ range $faculty}}
+    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab) }} </div>
+    {{ end }}
+{{ end }}
+
+{{ with $postdocs }}
+    {{ range . }}
+    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab) }} </div>
+    {{ end }}
+{{ end }}
+
+{{ with $students }}
+    {{ range . }}
+    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab) }} </div>
+    {{ end }}
+{{ end }}
+
+{{ with $visitors }}
+    {{ range . }}
+    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab) }} </div>
+    {{ end }}
+{{ end }}
+
+{{ with $support }}
+    {{ range . }}
+    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab) }} </div>
+    {{ end }}
+{{ end }}
+
+</div>
+
+{{ with $alumni }}
+<h1 id="alumni">Alumni</h1>
+<div class="flex-container-left">
+    {{ range . }}
+    <div class="flex-item"> {{ partial "list-item-alumni" . }} </div>
+    {{ end }}
+</div>
+{{ end }}
+
+{{ end }}
+
+{{ end }}
+
+
+{{ partial "footer" . }}
