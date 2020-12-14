@@ -1,5 +1,5 @@
 disableKinds = ["RSS"]
-baseURL = "https://cbl.eng.cam.ac.uk"
+baseURL = "https://cbl-website.onrender.com"
 languageCode = "en"
 title = "Computational and Biological Learning Lab"
 config = "config.toml"
