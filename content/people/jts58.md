@@ -10,7 +10,7 @@ status:  "student"
 short_bio: "" # can use markdown here
 website: ""
 google_scholar: "https://scholar.google.com/citations?user=9wJGGvMAAAAJ&hl=en"
-github: "synchro_stone"
+github: "syncrostone"
 linkedin: "jasmine-stone"
 draft: false
 labs: ["cbl", "hennequin"]
