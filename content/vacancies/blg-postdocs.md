@@ -2,7 +2,7 @@
 title: "BLG Postdoc Applications"
 date: 2020-11-16T16:58:53Z # leave as is
 labs: ["cbl"]
-draft: true
+draft: false
 ---
 
 Candidates must have a strong analytical background and demonstrable interest in computational neuroscience. They should have completed (or be near to completing) a PhD or equivalent in neuroscience, cognitive science, computational neuroscience, computational cognitive science, physics, mathematics, computer science, machine learning or a related field. Preference will be given to candidates with sufficient programming skills to run numerical simulations (eg. in C or MatLab). Expertise with neural network models, analysis of dynamical systems, Bayesian techniques, or reinforcement learning, and familiarity with relevant neurobiology is an advantage.

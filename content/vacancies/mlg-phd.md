@@ -2,7 +2,7 @@
 title: "PhD Programme in Advanced Machine Learning"
 date: 2020-11-16T16:33:19Z # leave as is
 labs: ["cbl"]
-draft: true
+draft: false
 ---
 
 The Cambridge Machine Learning Group (MLG) runs a PhD programme in Advanced Machine Learning. The supervisors are [Jose Miguel Hernandez-Lobato](https://jmhl.org/ "Miguel"), [Carl Rasmussen](http://mlg.eng.cam.ac.uk/carl/ "Carl"), [Richard E. Turner](http://cbl.eng.cam.ac.uk/Public/Turner/Turner "Rich"), and [Adrian Weller](http://mlg.eng.cam.ac.uk/adrian/). [Zoubin Ghahramani](http://mlg.eng.cam.ac.uk/zoubin/) is currently on academic leave and not accepting new students at this time.

@@ -2,7 +2,7 @@
 title: "BLG PhD Admissions"
 date: 2020-11-16T16:57:10Z # leave as is
 labs: ["cbl", "hennequin", "lengyel", "ahmadian"]
-draft: true
+draft: false
 ---
 
 <font color="#ff0000"> <strong>THE INFORMATION ON THIS PAGE IS OUT OF DATE, PLEASE SEE THE UNIVERSITY'S <a href="https://www.graduate.study.cam.ac.uk/" target="_top">GRADUATE APPLICATION WEBSITE</a> FOR UP-TO-DATE INFORMATION</strong> </font>
