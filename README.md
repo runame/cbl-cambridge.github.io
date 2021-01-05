@@ -1,6 +1,6 @@
 # User manual
 
-This static website is powered by [Hugo](http://gohugo.io).
+This static [website](https://cbl-website.onrender.com) is powered by [Hugo](http://gohugo.io).
 
 ## Base Usage
 Workflow
