@@ -7,22 +7,21 @@ publication: "bioRXiv"
 type: "preprint" # 1: journal   2: conf   3: preprint
 file: ""  # place pdf of file in static/publication/
 code: ""
-link: "https://www.biorxiv.org/content/10.1101/2020.02.02.931246v3"
+link: "https://www.biorxiv.org/content/10.1101/2020.02.02.931246v4"
 draft: false
 labs: ["cbl", "hennequin"]
 ---
 
 Across a range of motor and cognitive tasks, cortical activity can be
 accurately described by low-dimensional dynamics unfolding from specific
-initial conditions on every trial. These "preparatory states" largely
+initial conditions on every trial. These “preparatory states” largely
 determine the subsequent evolution of both neural activity and behaviour, and
-their importance raises questions regarding how they are − or ought to be −
-set. Here, we formulate motor preparation as optimal prospective control of
-future movements. The solution is a form of internal control of cortical
-circuit dynamics, which can be implemented as a thalamo-cortical loop gated
-by the basal ganglia. Critically, optimal control predicts selective
-quenching of variability in components of preparatory population activity
-that have future motor consequences, but not in others. This is consistent
-with recent perturbation experiments performed in mice, and with our novel
-analysis of monkey motor cortex activity during reaching. Together, these
-results suggest optimal anticipatory control of movement.
+their importance raises questions regarding how they are ─ or ought to be ─
+set. Here, we formulate motor preparation as optimal anticipatory control of
+future movements, and show that the solution requires a form of internal
+feedback control of cortical circuit dynamics. In contrast to a simple
+feedforward strategy, feedback control enables fast movement preparation and
+orthogonality between preparatory and movement activity, a distinctive
+feature of peri-movement activity in reaching monkeys. We propose a circuit
+model in which optimal preparatory control is implemented as a
+thalamo-cortical loop gated by the basal ganglia.
