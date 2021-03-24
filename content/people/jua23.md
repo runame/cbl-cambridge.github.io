@@ -8,7 +8,7 @@ year_arrived: "2019"
 year_left: ""
 still_around: true # switch to false upon the person's departure; they will then appear as Alumnus
 status: "student" # choose from "faculty", "group_leader", "affiliate", "postdoc", "student", "visitor", "support", "admin"
-website: "https://jamesallingham.co.za/" # set to "" if you don't have one
+website: "https://jamesallingham.com/" # set to "" if you don't have one
 google_scholar: "https://scholar.google.com/citations?user=CIp9adkAAAAJ&hl=en&oi=ao"
 github: "JamesAllingham"
 twitter: "JamesAllingham"
