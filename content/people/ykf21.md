@@ -8,7 +8,7 @@ year_arrived: "2018"
 year_left: ""
 still_around: true # switch to false upon the person's departure; they will then appear as Alumnus
 status: "student" # choose from "faculty", "group_leader", "affiliate", "postdoc", "student", "visitor", "support", "admin"
-website: "" # set to "" if you don't have one
+website: "https://andrewfoongyk.github.io/" # set to "" if you don't have one
 google_scholar: "https://scholar.google.com/citations?user=2UOjgIUAAAAJ&hl=en"
 github: "andrewfoongyk"
 twitter: "AndrewFoongYK"
