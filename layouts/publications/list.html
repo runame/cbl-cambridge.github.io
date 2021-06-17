@@ -3,12 +3,15 @@
 {{ $lab := $.Scratch.Get "lab" }}
 {{ with .Site.GetPage "/publications" }}
 <h1>{{ .Title }}</h1>
-{{ $articles := ((((where (where .Pages "Params.labs" "intersect" (slice $lab)) "Params.type" "journal").ByParam "date").Reverse).ByParam "year").Reverse }}
-{{ $preprints := ((((where (where .Pages "Params.labs" "intersect" (slice $lab)) "Params.type" "preprint").ByParam "date").Reverse).ByParam "year").Reverse }}
-{{ $rconfs := ((((where (where .Pages "Params.labs" "intersect" (slice $lab)) "Params.type" "rconf").ByParam "date").Reverse).ByParam "year").Reverse }}
-{{ $uconfs := ((((where (where .Pages "Params.labs" "intersect" (slice $lab)) "Params.type" "uconf").ByParam "date").Reverse).ByParam "year").Reverse }}
-{{ $workshops := ((((where (where .Pages "Params.labs" "intersect" (slice $lab)) "Params.type" "workshop").ByParam "date").Reverse).ByParam "year").Reverse }}
-{{ $thesis := ((((where (where .Pages "Params.labs" "intersect" (slice $lab)) "Params.type" "thesis").ByParam "date").Reverse).ByParam "year").Reverse }}
+
+{{ $pages := where .Pages "Params.labs" "intersect" (slice $lab) }}
+{{ $articles := ((((where $pages "Params.type" "journal").ByParam "date").Reverse).ByParam "year").Reverse }}
+{{ $preprints := ((((where $pages "Params.type" "preprint").ByParam "date").Reverse).ByParam "year").Reverse }}
+{{ $rconfs := ((((where $pages "Params.type" "rconf").ByParam "date").Reverse).ByParam "year").Reverse }}
+{{ $uconfs := ((((where $pages "Params.type" "uconf").ByParam "date").Reverse).ByParam "year").Reverse }}
+{{ $workshops := ((((where $pages "Params.type" "workshop").ByParam "date").Reverse).ByParam "year").Reverse }}
+{{ $thesis := ((((where $pages "Params.type" "thesis").ByParam "date").Reverse).ByParam "year").Reverse }}
+{{ $refereed := ((union $articles $rconfs).ByParam "year").Reverse }}
 
 <!-- check that type of all publications are recognized -->
 {{ $publications_with_invalid_type := (where .Data.Pages "Params.type" "not in" (slice "journal" "rconf" "uconf" "thesis" "preprint" "workshop" "thesis")) }}
@@ -39,11 +42,8 @@
 
 
 <div class="tag_list">
-    {{ with $articles }}
-    <a class="button tag" href="#articles">Journal Articles</a>
-    {{ end }}
-    {{ with $rconfs }}
-    <a class="button tag" href="#rconf">Refereed Conference Proceedings</a>
+    {{ with $refereed }}
+    <a class="button tag" href="#articles">Peer-reviewed articles</a>
     {{ end }}
     {{ with $uconfs }}
     <a class="button tag" href="#uconf">Unrefereed Conference Proceedings</a>
@@ -60,8 +60,8 @@
 </div>
 
 
-{{ with $articles }}
-<h2 id="articles">Journal Articles</h2>
+{{ with $refereed }}
+<h2 id="articles">Peer-reviewed articles</h2>
 <div class="publication-flex-container">
 {{ range  . }} 
 {{ partial "list-item-publications" (dict "context" . "lab" $lab) }}
@@ -76,18 +76,6 @@
 <h2 id="preprints">Preprints</h2>
 <div class="publication-flex-container">
 {{ range . }}
-{{ partial "list-item-publications" (dict "context" . "lab" $lab) }}
-{{ end }}
-</div>
-<br>
-<hr>
-<br>
-{{ end }}
-
-{{ with $rconfs }}
-<h2 id="rconf">Refereed Conference Proceedings</h2>
-<div class="publication-flex-container">
-{{ range . }} 
 {{ partial "list-item-publications" (dict "context" . "lab" $lab) }}
 {{ end }}
 </div>
