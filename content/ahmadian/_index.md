@@ -1,5 +1,5 @@
 ---
-title: Ahamdian Lab
+title: Ahmadian Lab
 type: home
 layout: "index"
 ---
