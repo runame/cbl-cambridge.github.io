@@ -1,7 +1,7 @@
 ---
 date: 2021-09-02T02:55:27+01:00
 title: "Sniff-synchronized, gradient-guided olfactory search by freely moving mice"
-authors: ["TM Findley", "DG Wyrick", "JL Cramer", "MA Brown", "B Holcomb", "R Attey", "D Yeh", "E Monasevitch", "N Nouboussi", "I Cullen", "JO Songco", "JF King", "ya311", "MC Smear"]
+authors: ["TM Findley<sup>†</sup>", "DG Wyrick<sup>†</sup>", "JL Cramer", "MA Brown", "B Holcomb", "R Attey", "D Yeh", "E Monasevitch", "N Nouboussi", "I Cullen", "JO Songco", "JF King", "ya311<sup>*</sup>", "MC Smear<sup>*</sup>"]
 year: "2021"
 publication: "eLife"
 type: "journal"
