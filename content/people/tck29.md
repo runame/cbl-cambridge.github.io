@@ -5,7 +5,7 @@ firstname: "Ta-Chu"
 lastname: "Kao"
 email: "ta-chu.kao@hotmail.com"
 year_arrived: "2017"
-still_around: true
+still_around: false
 status: "student" 
 short_bio: "" # use can use markdown here
 website: "https://tachukao.github.io"
