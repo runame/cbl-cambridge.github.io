@@ -15,6 +15,5 @@ labs: ["cbl", "hennequin"]
 draft: false
 ---
 
-Calvin studied physics and philosophy at the University of Oxford. He is
-interested in motor control, reinforcement learning, and neural data analysis.
+now a postdoc with Maneesh Sahani at Gatsby UCL
 
