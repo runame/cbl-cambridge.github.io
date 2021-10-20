@@ -5,6 +5,7 @@ firstname: "Ta-Chu"
 lastname: "Kao"
 email: "ta-chu.kao@hotmail.com"
 year_arrived: "2017"
+year_left: "2021"
 still_around: false
 status: "student" 
 short_bio: "" # use can use markdown here
