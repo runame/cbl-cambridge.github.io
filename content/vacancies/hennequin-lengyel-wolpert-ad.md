@@ -36,5 +36,5 @@ Preference will be given to candidates with
 Salary: £33,309-53,348 pa. The funds for this post are available for two years in the first
 instance.
 
-For informal queries, please contact [Guillaume Hennequin](mailto:g.hennequin@eng.cam.ac.uk), [Máté Lengyel](mailto:m.lengyel@eng.cam.ac.uk) or [Daniel Wolpert](wolpert@columbia.edu).
+For informal queries, please contact [Guillaume Hennequin](mailto:g.hennequin@eng.cam.ac.uk), [Máté Lengyel](mailto:m.lengyel@eng.cam.ac.uk) or [Daniel Wolpert](mailto:wolpert@columbia.edu).
 
