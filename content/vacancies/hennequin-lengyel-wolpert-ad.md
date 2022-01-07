@@ -36,5 +36,7 @@ Preference will be given to candidates with
 Salary: £33,309-53,348 pa. The funds for this post are available for two years in the first
 instance.
 
-For informal queries, please contact [Guillaume Hennequin](mailto:g.hennequin@eng.cam.ac.uk), [Máté Lengyel](mailto:m.lengyel@eng.cam.ac.uk) or [Daniel Wolpert](mailto:wolpert@columbia.edu).
+The formal application process is expected to open in late January (a link will be added here, and we will tweet).
+Before then, we encourage candidates to **make informal enquiries by email**.
+Please contact [Guillaume Hennequin](mailto:g.hennequin@eng.cam.ac.uk), [Máté Lengyel](mailto:m.lengyel@eng.cam.ac.uk) and/or [Daniel Wolpert](mailto:wolpert@columbia.edu).
 
