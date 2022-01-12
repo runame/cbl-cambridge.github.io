@@ -3,12 +3,12 @@ date: 2021-06-17T10:09:27+01:00
 title: "Natural continual learning: success is a journey, not (just) a destination"
 authors: ["tck29", "ktj21", "ab2349", "gjeh2"]
 year: "2021"
-publication: "arXiv"
-type: "preprint" # journal / rconf (i.e. refereed conference) / uconf (i.e. unrefereed conference) / thesis / preprint / workshop
+publication: "NeurIPS"
+type: "rconf" # journal / rconf (i.e. refereed conference) / uconf (i.e. unrefereed conference) / thesis / preprint / workshop
 link: "https://arxiv.org/abs/2106.08085" # link to the publication
 file: "https://arxiv.org/pdf/2106.08085" # IF you are NOT able to provide a link, then place a pdf in static/publications/ and write the filename here (e.g. "hennequin-neuron-2018.pdf") 
 code: "" # link to e.g. github repo
-illustration: "" # place image (e.g. cover) in static/publications/
+illustration: "jensen-arxiv-2021.png" # place image (e.g. cover) in static/publications/
 selected: false # (ignore for now; in the future we might want to add a "Selected publications" section)
 labs: ["hennequin"] # list of labs on which the publication should be displayed (use "cbl" to display on the main CBL website, and the PI's lastname (lowercase) for individual lab's websites, e.g. "hennequin")
 draft: false

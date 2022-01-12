@@ -3,8 +3,8 @@ date: 2021-06-17T10:03:31+01:00
 title: "Scalable Bayesian GPFA with automatic relevance determination and discrete noise models"
 authors: ["ktj21", "tck29", "jts58", "gjeh2"]
 year: "2021"
-publication: "bioRxiv"
-type: "preprint" # journal / rconf (i.e. refereed conference) / uconf (i.e. unrefereed conference) / thesis / preprint / workshop
+publication: "NeurIPS"
+type: "rconf" # journal / rconf (i.e. refereed conference) / uconf (i.e. unrefereed conference) / thesis / preprint / workshop
 link: "https://www.biorxiv.org/content/10.1101/2021.06.03.446788v1" # link to the publication
 file: "https://www.biorxiv.org/content/10.1101/2021.06.03.446788v1.full.pdf" # IF you are NOT able to provide a link, then place a pdf in static/publications/ and write the filename here (e.g. "hennequin-neuron-2018.pdf") 
 code: "" # link to e.g. github repo
