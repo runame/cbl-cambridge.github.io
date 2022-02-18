@@ -5,6 +5,8 @@ labs: ["hennequin", "lengyel"]
 draft: false
 ---
 
+**To apply, visit [https://www.jobs.cam.ac.uk/job/33691/](https://www.jobs.cam.ac.uk/job/33691/).**
+
 We are seeking a highly creative and motivated postdoctoral fellow to work on a
 collaborative project between the labs of Guillaume Hennequin and Máté Lengyel
 at the Computational and Biological Learning Lab, Department of Engineering,
@@ -33,10 +35,7 @@ Preference will be given to candidates with
 - sufficient programming skills to run numerical simulations and to use large scale optimization packages
 - expertise with advanced data analysis and Bayesian techniques
 
-Salary: £33,309-53,348 pa. The funds for this post are available for two years in the first
-instance.
+For further details and to send your application, please go to [https://www.jobs.cam.ac.uk/job/33691/](https://www.jobs.cam.ac.uk/job/33691/).
 
-The formal application process is expected to open in late January (a link will be added here, and we will tweet).
-Before then, we encourage candidates to **make informal enquiries by email**.
-Please contact [Guillaume Hennequin](mailto:g.hennequin@eng.cam.ac.uk), [Máté Lengyel](mailto:m.lengyel@eng.cam.ac.uk) and/or [Daniel Wolpert](mailto:wolpert@columbia.edu).
+For informal enquiries, please contact [Guillaume Hennequin](mailto:g.hennequin@eng.cam.ac.uk), [Máté Lengyel](mailto:m.lengyel@eng.cam.ac.uk) and/or [Daniel Wolpert](mailto:wolpert@columbia.edu).
 
