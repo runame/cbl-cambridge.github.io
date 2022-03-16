@@ -9,7 +9,7 @@ year_left: "2021"
 still_around: false
 status:  "grad_student"
 short_bio: "" # can use markdown here
-website: ""
+website: "https://syncrostone.github.io"
 google_scholar: "https://scholar.google.com/citations?user=9wJGGvMAAAAJ&hl=en"
 github: "syncrostone"
 linkedin: "jasmine-stone"
