@@ -1,7 +1,7 @@
 ---
 date: 2021-06-17T10:09:27+01:00
 title: "Natural continual learning: success is a journey, not (just) a destination"
-authors: ["tck29", "ktj21", "gmv27", "ab2349", "gjeh2"]
+authors: ["tck29<sup>*</sup>", "ktj21<sup>*</sup>", "gmv27", "ab2349", "gjeh2"]
 year: "2021"
 publication: "NeurIPS"
 type: "rconf" # journal / rconf (i.e. refereed conference) / uconf (i.e. unrefereed conference) / thesis / preprint / workshop
