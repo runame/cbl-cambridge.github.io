@@ -1,12 +1,12 @@
 ---
 date: 2021-06-17T10:03:31+01:00
 title: "Scalable Bayesian GPFA with automatic relevance determination and discrete noise models"
-authors: ["ktj21", "tck29", "jts58", "gjeh2"]
+authors: ["ktj21<sup>*</sup>", "tck29<sup>*</sup>", "jts58", "gjeh2"]
 year: "2021"
 publication: "NeurIPS"
 type: "rconf" # journal / rconf (i.e. refereed conference) / uconf (i.e. unrefereed conference) / thesis / preprint / workshop
-link: "https://www.biorxiv.org/content/10.1101/2021.06.03.446788v1" # link to the publication
-file: "https://www.biorxiv.org/content/10.1101/2021.06.03.446788v1.full.pdf" # IF you are NOT able to provide a link, then place a pdf in static/publications/ and write the filename here (e.g. "hennequin-neuron-2018.pdf") 
+link: "https://proceedings.neurips.cc/paper/2021/hash/58238e9ae2dd305d79c2ebc8c1883422-Abstract.html"
+file: "" # IF you are NOT able to provide a link, then place a pdf in static/publications/ and write the filename here (e.g. "hennequin-neuron-2018.pdf") 
 code: "" # link to e.g. github repo
 illustration: "" # place image (e.g. cover) in static/publications/
 selected: false # (ignore for now; in the future we might want to add a "Selected publications" section)
