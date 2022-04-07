@@ -1,12 +1,12 @@
 ---
 date: 2021-06-17T10:09:27+01:00
 title: "Natural continual learning: success is a journey, not (just) a destination"
-authors: ["tck29", "ktj21", "ab2349", "gjeh2"]
+authors: ["tck29", "ktj21", "gmv27", "ab2349", "gjeh2"]
 year: "2021"
 publication: "NeurIPS"
 type: "rconf" # journal / rconf (i.e. refereed conference) / uconf (i.e. unrefereed conference) / thesis / preprint / workshop
-link: "https://arxiv.org/abs/2106.08085" # link to the publication
-file: "https://arxiv.org/pdf/2106.08085" # IF you are NOT able to provide a link, then place a pdf in static/publications/ and write the filename here (e.g. "hennequin-neuron-2018.pdf") 
+link: "https://proceedings.neurips.cc/paper/2021/hash/ec5aa0b7846082a2415f0902f0da88f2-Abstract.html"
+file: "" # IF you are NOT able to provide a link, then place a pdf in static/publications/ and write the filename here (e.g. "hennequin-neuron-2018.pdf") 
 code: "" # link to e.g. github repo
 illustration: "jensen-arxiv-2021.png" # place image (e.g. cover) in static/publications/
 selected: false # (ignore for now; in the future we might want to add a "Selected publications" section)
