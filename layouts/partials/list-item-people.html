@@ -18,15 +18,16 @@
 {{ else if (fileExists (printf "/static/people/%s%s" $crsid ".jpeg")) }}
 {{ $localscratch.Set "photo" (printf "/people/%s%s" $crsid ".jpeg") }}
 {{ else }}
-{{ warnf "%s's photo does not exist or has unsupported file name/extensions. Using photo of serious Owl in it's place..." $crsid }}
-{{ $localscratch.Set "photo" (path.Join "/people" "serious-owl.jpeg")}}
+{{ warnf "%s has no photo yet, so will not appear in the list" $crsid }}
+{{ $localscratch.Set "photo" ""}}
 {{ end }}
 
 {{ $photo := $localscratch.Get "photo" }}
 
+{{ if ne $photo "" }}
+<div class="person">
 <a href="{{ $link }}">
     <div class="img-cropper"><img src="{{ $photo }}" /></div>
-    {{ $crsid := (path.Base $link) }}
     {{ if (eq .context.Params.firstname "Bored Yann") }}
     {{ warnf "%s's information is still missing" $crsid }}
     <p>{{ $crsid }}</p>
@@ -34,3 +35,5 @@
     <p>{{ .context.Params.Title }}</p>
     {{ end }}
 </a>
+</div>
+{{ end }}

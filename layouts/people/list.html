@@ -67,7 +67,7 @@
 <h1 id="postdocs">Postdocs</h1>
 <div class="flex-container">
     {{ range . }}
-    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab) }} </div>
+    {{ partial "list-item-people" (dict "context" . "lab" $lab) }}
     {{ end }}
 </div>
 {{ end }}
@@ -76,7 +76,7 @@
 <h1 id="students">Graduate Students</h1>
 <div class="flex-container">
     {{ range . }}
-    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab) }} </div>
+    {{ partial "list-item-people" (dict "context" . "lab" $lab) }}
     {{ end }}
 </div>
 {{ end }}

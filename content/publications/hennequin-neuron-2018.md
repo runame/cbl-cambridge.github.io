@@ -32,11 +32,9 @@ temporal dynamics of variability suppression. Specifying the cortical operating
 regime is key to understanding the computations underlying perception.
 
 <br>
-
-<div style="float:left; margin-bottom: 1em">
-<center>
-<img width="80%" src="/publications/hennequin-neuron-2018-cover.png"/>
-<center>
+ 
+<div style="float:left; margin-bottom: 1em; margin-right:1em; width: max(10vw, 10em);">
+<img width="100%" src="/publications/hennequin-neuron-2018-cover.png"/>
 </div>
 <div>
 <b>On the cover:</b>
@@ -49,4 +47,5 @@ vibrate, high- and low-variability regions of the plate are revealed as regions
 repelling and attracting small grains of rice. Much like in the cortex,
 patterns of variability arise as an interplay between the «stimulus» (the
 sound) and the dynamics of the medium (the plate). Photograph by Gergő Orbán,
-with help from Miklós Vass, Máté and Dávid Lengyel. Artwork by Guillaume Hennequin.</div>
+with help from Miklós Vass, Máté and Dávid Lengyel. Artwork by Guillaume Hennequin.
+</div>

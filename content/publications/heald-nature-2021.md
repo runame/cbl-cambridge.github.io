@@ -20,7 +20,7 @@ Humans spend a lifetime learning, storing and refining a repertoire of motor mem
 
 <br>
 
-<div style="float:left; margin-bottom: 1em; margin-right:1em; width: 10vw;">
+<div style="float:left; margin-bottom: 1em; margin-right:1em; width: max(10vw, 10em);">
 <img width="100%" src="/publications/heald-nature-2021.png"/>
 </div>
 <div>

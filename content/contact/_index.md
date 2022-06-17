@@ -33,9 +33,13 @@ CBL is on the 4th floor of Baker building (blue on plan below) -- you can take t
 
 427 ─ [Guillaume Hennequin](/people/gjeh2)  
 
+428 ─ [Yashar Ahmadian](/people/ya311)
+
 429 ─ [Rich Turner](/people/ret26)
 
-437 ─ [Miguel Hernandez-Lobato](/people/jmh233)  
+437 ─ [David Krueger](/people/dsk30)  
+
+441 ─ [Flavia Mancini](/people/fm456)  
 
 442 ─ [Carl Rasmussen](/people/cer54)  
 
@@ -43,7 +47,6 @@ CBL is on the 4th floor of Baker building (blue on plan below) -- you can take t
 
 445 ─ [Catherine Munn](/people/cm861), administrator
 
-449 ─ [Zoubin Ghahramani](/people/zg201)
-
+449 ─ [Miguel Hernandez-Lobato](/people/jmh233)  
 
 
