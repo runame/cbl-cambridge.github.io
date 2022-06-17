@@ -11,8 +11,8 @@ config = "config.toml"
     githubUsername = "cbl"
     showBorder = true
     backgroundColor = "white"
-    fontSmall = "Alegreya Sans"
-    fontBig = "Alegreya"
+    fontSmall = "Anaheim"
+    fontBig = "Coda"
     theme-color = '#2167a0'
     top-image = '/kings-college-chapel.jpg'
 
