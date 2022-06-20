@@ -2,7 +2,6 @@
 title: "News title"
 date: {{ .Date }} # leave as is (unless you know what you are doing ^^)
 blurb: "short (markdown) description goes here" # this gets displayed underneath the title in the news feed
-pinned: false # by default, only the fist 10 news items are displayed; if you set pinned to true, then this news item will be displayed regardless of its age 
 labs: ["cbl", "hennequin"] # list of labs on which the news should be displayed (use "cbl" to display on the main CBL website, and the PI's lastname (lowercase) for individual lab's websites, e.g. "hennequin")
 draft: true
 ---

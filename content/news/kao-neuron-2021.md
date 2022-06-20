@@ -2,7 +2,6 @@
 title: "New paper in Neuron"
 date: 2021-04-12T13:06:15Z # leave as is
 blurb: "See [Kao et al.](https://www.sciencedirect.com/science/article/pii/S0896627321001574)'s work on optimal motor preparation via a thalamo-cortical loop"
-pinned: false # the last 10 items will be automatically displayed on the front page, + any that says "pinned: true"
 draft: false
 labs: ["hennequin"]
 ---

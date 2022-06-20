@@ -2,7 +2,6 @@
 title: "Bernstein workshop, Berlin, 25-26 September"
 date: 2018-09-19T09:54:07+01:00 # leave as is
 blurb: "Come and join us for an inspiring workshop on \"Emergent function in non-random neural networks\", ahead of the main Bernstein Conference"
-pinned: false
 draft: false
 labs: ["hennequin"]
 ---

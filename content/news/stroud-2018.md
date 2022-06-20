@@ -2,7 +2,6 @@
 title: "New paper accepted at Nature Neuroscience, with Jake Stroud, Mason Porter and Tim P. Vogels"
 date: 2018-09-25T06:32:56+01:00 # leave as is
 blurb: "Motor primitives in space and time via targeted gain modulation in cortical networks"
-pinned: false
 draft: false
 labs: ["hennequin"]
 ---

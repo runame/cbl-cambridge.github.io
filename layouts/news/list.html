@@ -5,12 +5,7 @@
     <br>
     <div class="flex-container-left">
     {{ with (.Site.GetPage "/news") }}
-    <!-- pinned -->
-    {{ range (where (where (where .Data.Pages "Section" "news") "Params.pinned" true) "Params.labs" "intersect" (slice $lab)) }}
-    {{ partial "list-item-news" (dict "context" . "lab" $lab) }}
-    {{ end }}
-    <!-- not pinned -->
-    {{ range (where (where (where .Data.Pages "Section" "news") "Params.pinned" false) "Params.labs" "intersect" (slice $lab)) }}
+    {{ range (where (where .Data.Pages "Section" "news") "Params.labs" "intersect" (slice $lab)) }}
     {{ partial "list-item-news" (dict "context" . "lab" $lab) }}
     {{ end }}
     {{ end }}

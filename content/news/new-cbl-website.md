@@ -2,7 +2,6 @@
 title: "CBL gets a new website"
 date: 2020-12-01T12:22:32Z # leave as is (unless you know what you are doing ^^)
 blurb: "We have a shiny new CBL website!"
-pinned: false
 labs: ["cbl"] 
 draft: false
 ---

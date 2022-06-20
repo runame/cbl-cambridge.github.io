@@ -57,7 +57,7 @@ unsafe= true
 
     [[menu.hennequin]]
         url = "/"
-        name = "CBL HOME"
+        name = "BACK TO CBL HOME"
         pre = "<img style='float: left; padding: 0em; margin: 0em; height: 2em; transform: translateY(-10%)' src='/favicon.svg'/>"
         weight = 1
 
@@ -94,7 +94,7 @@ unsafe= true
 
     [[menu.lengyel]]
         url = "/"
-        name = "CBL HOME"
+        name = "BACK TO CBL HOME"
         pre = "<img style='float: left; padding: 0em; margin: 0em; height: 2em; transform: translateY(-10%)' src='/favicon.svg'/>"
         weight = 1
 
@@ -130,7 +130,7 @@ unsafe= true
 
     [[menu.ahmadian]]
         url = "/"
-        name = "CBL HOME"
+        name = "BACK TO CBL HOME"
         pre = "<img style='float: left; padding: 0em; margin: 0em; height: 2em; transform: translateY(-10%)' src='/favicon.svg'/>"
         weight = 1
 

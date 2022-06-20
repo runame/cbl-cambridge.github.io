@@ -2,7 +2,6 @@
 title: "Calvin's preprint on optimal motor preparation"
 date: 2020-02-05T13:06:15Z # leave as is
 blurb: "[out on bioRXiv](https://www.biorxiv.org/content/10.1101/2020.02.02.931246v4)"
-pinned: false # the last 10 items will be automatically displayed on the front page, + any that says "pinned: true"
 draft: false
 labs: ["hennequin"]
 ---
