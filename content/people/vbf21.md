@@ -4,7 +4,7 @@ date: 2022-06-20T11:27:41+01:00 # leave as is
 firstname: "Vincent"
 lastname: "Fortuin"
 email: "vbf21@cam.ac.uk"
-year_arrived: "2021"
+year_arrived: "2022"
 year_left: ""
 still_around: true # switch to false upon the person's departure; they will then appear as Alumnus
 status: "postdoc" # choose from "faculty", "group_leader", "affiliate", "postdoc", "student", "visitor", "support", "admin"
