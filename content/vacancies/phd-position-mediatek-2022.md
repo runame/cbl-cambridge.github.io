@@ -2,7 +2,7 @@
 title: "PhD studentship to work on meta-learning between CBL and Mediatek"
 date: 2022-01-12T11:59:27Z # leave as is
 labs: ["hennequin"]
-draft: false
+draft: true
 ---
 
 We invite applications for a PhD position funded by a DTP CASE studentship, to work

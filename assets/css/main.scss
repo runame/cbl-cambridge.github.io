@@ -336,34 +336,17 @@ a:hover {
 
 /* Button to "go back to top of page" */
 
-.top-button {
-    visibility: hidden;
-    overflow: hidden;
-    position: fixed;
-    bottom: 20%;
-    right: 1em;
-    z-index: 99;
-    border: 10px solid #fff;
-    border-radius: 1em;
-    padding: 0.2em 2.5em 0.2em 1em;
-    background: #ddd;
-    color: #000;
-    transform: translateX(10%);
-    transition: transform 1s;
-
-}
+.back-button {
+    font-size: 200%;
+    color: #aaaaaa;
+    transition: 0.4s;
+ }
 
 @media (hover: hover) {
-.top-button:hover {
+.back-button:hover {
     cursor: pointer;
-    background: $theme-color;
-    color: #fff;
+    color: $theme-color;
 }
-}
-
-.top-button:active {
-    background: $theme-color;
-    color: #fff;
 }
 
 /* Menu */

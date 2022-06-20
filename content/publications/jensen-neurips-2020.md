@@ -39,6 +39,6 @@ single angular variable.
 
 
 <div style="width:80%; margin-top: 3em; margin-left: auto; margin-right: auto;">
-<img width="100%" src="../mgplvm.png"></img>
+<img width="100%" src="/publications/mgplvm.png"></img>
 </div>
  
