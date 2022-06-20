@@ -1,9 +1,9 @@
 ---
 title: ""
-date: 2021-12-16T17:19:11+01:00 # leave as is (unless you know what you are doing ^^)
+date: 2021-12-16T17:19:11+01:00 
 blurb: "New [paper](/lengyel/publications/heald-nature-2021) on contextual motor learning published in **Nature**"
 pinned: true
-labs: ["cbl", "lengyel"]
+labs: ["lengyel"]
 draft: false
 ---
 

@@ -1,5 +1,12 @@
 {{ $lab := $.Scratch.Get "lab" }}
-{{ $news := printf "/%s/news" $lab | printf "%s" }}
+{{ $localscratch := newScratch }}
+
+{{ if (eq $lab "cbl") }}
+{{ $localscratch.Set "news_url" "/news" }}
+{{ else }}
+{{ $localscratch.Set "news_url" (printf "/%s/news" $lab) }}
+{{ end }}
+{{ $news := $localscratch.Get "news_url"}}
 <div class="news">
     <h2>Recent updates <a style="color: #aaa;" href={{ $news }}>(see all)</a></h2>
     {{ with (.Site.GetPage "/news") }}
