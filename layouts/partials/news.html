@@ -1,6 +1,7 @@
 {{ $lab := $.Scratch.Get "lab" }}
+{{ $news := printf "/%s/news" $lab | printf "%s" }}
 <div class="news">
-    <h2>Recent updates <a style="color: #aaa;" href="news">(see all)</a></h2>
+    <h2>Recent updates <a style="color: #aaa;" href={{ $news }}>(see all)</a></h2>
     {{ with (.Site.GetPage "/news") }}
     <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay": true, "adaptiveHeight": true, "initialIndex": 1, "pageDots": false }'>
     <!-- pinned -->
