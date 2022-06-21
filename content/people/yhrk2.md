@@ -7,15 +7,13 @@ email: ""
 year_arrived: "2018"
 still_around: true
 status: "postdoc"
-website: "https://www.neuroscience.cam.ac.uk/directory/profile.php?yulkang"
-google_scholar: ""
-github: ""
-twitter: ""
+website: "https://yulkang.net"
+google_scholar: "https://scholar.google.com/citations?user=mdpRvXoAAAAJ&hl=en"
+github: "yulkang"
+twitter: "YulKang1"
 linkedin: ""
 draft: false
 labs: ["cbl", "lengyel"]
 ---
 
-Yul Kang joined CBL as a postdoc in 2018, and was elected a Junior Research Fellow at Wolfson College in 2019. He received his MD from Seoul National University, and PhD in Neuroscience from Columbia University supervised by Michael Shadlen. Yul is interested in finding normative solutions and examining their behavioural and neural signatures in spatial navigation, decision making, and (active) learning under uncertainty.
-
-<!-- Here you might want to place some Markdown content. -->
+Yul Kang joined the Biological Learning Group in 2018 as a postdoc working with Prof. Máté Lengyel, and was elected a Junior Research Fellow at Wolfson College in 2019. Before he joined the group, he received an MD from Seoul National University in South Korea, and a PhD in Neuroscience from Columbia University in the USA supervised by Michael Shadlen. As a theorist, he finds optimal algorithms to perform cognitive tasks under uncertainty, using probabilistic neural representation models and large-scale numerical optimisation methods, and compares it with data from the literature or experimental collaborators. As a psychophysicist, he performs human behavioural experiments himself. He has applied this approach to areas including perceptual decision-making, spatial navigation, episodic memory, and active sensing.
