@@ -8,12 +8,13 @@ year_arrived: "2017"
 year_left: "2018"
 still_around: false
 status: "postdoc" 
-short_bio: "now University Lecturer in Sheffield"
+short_bio: "now a University Lecturer at Queen Mary University of London"
 google_scholar: "https://scholar.google.com/citations?user=zKFO7qkAAAAJ&hl=en&oi=ao"
 website: "https://sites.google.com/view/msadabadi"
 draft: false
 labs: ["cbl", "hennequin"]
 ---
-now a University Lecturer in Sheffield
+
+now a University Lecturer at Queen Mary University of London
 
 
