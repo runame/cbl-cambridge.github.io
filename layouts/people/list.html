@@ -5,23 +5,23 @@
 
 {{ with .Site.GetPage "/people" }}
 
-{{ $faculty := ((where (where (where .Data.Pages "Params.status" "in" "faculty") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "year_arrived") }}
+{{ $faculty := ((where (where (where .Data.Pages "Params.status" "in" "faculty") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "lastname") }}
 
-{{ $group_leaders := ((where (where (where .Data.Pages "Params.status" "in" "group_leader") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "year_arrived") }}
+{{ $group_leaders := ((where (where (where .Data.Pages "Params.status" "in" "group_leader") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "lastname") }}
 
-{{ $affiliates := ((where (where (where .Data.Pages "Params.status" "in" "affiliate") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "year_arrived") }}
+{{ $affiliates := ((where (where (where .Data.Pages "Params.status" "in" "affiliate") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "lastname") }}
 
-{{ $postdocs := ((where (where (where .Data.Pages "Params.status" "in" "postdoc") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "year_arrived") }}
+{{ $postdocs := ((where (where (where .Data.Pages "Params.status" "in" "postdoc") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "lastname") }}
 
-{{ $students := ((where (where (where .Data.Pages "Params.status" "in" "student") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "year_arrived") }}
+{{ $students := ((where (where (where .Data.Pages "Params.status" "in" "student") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "lastname") }}
 
-{{ $support := ((where (where (where .Data.Pages "Params.status" "in" "support") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "year_arrived") }}
+{{ $support := ((where (where (where .Data.Pages "Params.status" "in" "support") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "lastname") }}
 
-{{ $visitors := ((where (where (where .Data.Pages "Params.status" "in" "visitor") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "year_arrived") }}
+{{ $visitors := ((where (where (where .Data.Pages "Params.status" "in" "visitor") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "lastname") }}
 
-{{ $admin := ((where (where (where .Data.Pages "Params.status" "in" "admin") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "year_arrived") }}
+{{ $admin := ((where (where (where .Data.Pages "Params.status" "in" "admin") "Params.labs" "intersect" (slice $lab)) "Params.still_around" true).ByParam "lastname") }}
 
-{{ $alumni := ((where (where (where .Data.Pages "Params.status" "in" (slice "faculty" "group_leader" "affiliate" "postdoc" "grad_student")) "Params.labs" "intersect" (slice $lab)) "Params.still_around" false).ByParam "year_arrived") }}
+{{ $alumni := ((where (where (where .Data.Pages "Params.status" "in" (slice "faculty" "group_leader" "affiliate" "postdoc" "grad_student")) "Params.labs" "intersect" (slice $lab)) "Params.still_around" false).ByParam "lastname") }}
 
 
 <!-- check that status of all people are recognized -->
