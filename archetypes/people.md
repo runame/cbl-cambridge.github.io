@@ -6,6 +6,7 @@ lastname: "LeCun"
 email: "byl22@cam.ac.uk"
 year_arrived: "2005"
 year_left: ""
+alumn_info: ""
 still_around: true # switch to false upon the person's departure; they will then appear as Alumnus
 status: "student" # choose from "faculty", "group_leader", "affiliate", "postdoc", "student", "visitor", "support", "admin"
 website: "http://yann.lecun.com/" # set to "" if you don't have one
