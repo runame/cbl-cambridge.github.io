@@ -14,9 +14,9 @@ labs: ["cbl", "lengyel"]
 draft: false
 ---
 
-See also [commentary](https://www.nature.com/articles/d41586-021-03028-x).
-
 Humans spend a lifetime learning, storing and refining a repertoire of motor memories. For example, through experience, we become proficient at manipulating a large range of objects with distinct dynamical properties. However, it is unknown what principle underlies how our continuous stream of sensorimotor experience is segmented into separate memories and how we adapt and use this growing repertoire. Here we develop a theory of motor learning based on the key principle that memory creation, updating and expression are all controlled by a single computation—contextual inference. Our theory reveals that adaptation can arise both by creating and updating memories (proper learning) and by changing how existing memories are differentially expressed (apparent learning). This insight enables us to account for key features of motor learning that had no unified explanation: spontaneous recovery, savings, anterograde interference, how environmental consistency affects learning rate and the distinction between explicit and implicit learning. Critically, our theory also predicts new phenomena—evoked recovery and context-dependent single-trial learning—which we confirm experimentally. These results suggest that contextual inference, rather than classical single-context mechanisms, is the key principle underlying how a diverse set of experiences is reflected in our motor behaviour.
+
+See also [commentary](https://www.nature.com/articles/d41586-021-03028-x).
 
 <br>
 
@@ -25,7 +25,7 @@ Humans spend a lifetime learning, storing and refining a repertoire of motor mem
 </div>
 <div>
 <b>On the cover:</b>
-A model of motor learning explains how we manage a repetroire of distinct memories appropriate for handling objects such as a cup, die or counter. The model determines when to create a new memory and how existing memories are expressed and updated using a full probabilistic treatment of the problem of motor control in the face of stochasticity in our environment (such as the roll of a dice) as well as in our senses and muscles. Image credit and design: Daniel Wolpert.
+A model of motor learning explains how we manage a repertoire of distinct memories appropriate for handling objects such as a cup, die or counter. The model determines when to create a new memory and how existing memories are expressed and updated using a full probabilistic treatment of the problem of motor control in the face of stochasticity in our environment (such as the roll of a dice) as well as in our senses and muscles. Image credit and design: Daniel Wolpert.
 </div> 
 
 
