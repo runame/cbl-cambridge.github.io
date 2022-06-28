@@ -158,7 +158,9 @@
 <h1 id="alumni">Alumni</h1>
 <div class="flex-container-left">
     {{ range . }}
+    {{ if ne .Params.year_left "" }}
     <div class="flex-item"> {{ partial "list-item-alumni" . }} </div>
+    {{ end }}
     {{ end }}
 </div>
 {{ end }}

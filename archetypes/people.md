@@ -5,9 +5,9 @@ firstname: "Bored Yann"
 lastname: "LeCun"
 email: "byl22@cam.ac.uk"
 year_arrived: "2005"
-year_left: ""
-alumn_info: ""
-still_around: true # switch to false upon the person's departure; they will then appear as Alumnus
+year_left: "" # if you want this person to appear in alumni, populate this 
+alumn_info: "" # optional: this will replace the default "year_arrived -- year_left" date range shown next to the person's name in the alumni list 
+still_around: true # switch to false upon the person's departure; they will then appear in the list of alumni
 status: "student" # choose from "faculty", "group_leader", "affiliate", "postdoc", "student", "visitor", "support", "admin"
 website: "http://yann.lecun.com/" # set to "" if you don't have one
 google_scholar: "https://scholar.google.com/citations?user=WLN3QrAAAAAJ&hl=en"

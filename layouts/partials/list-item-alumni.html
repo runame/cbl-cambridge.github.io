@@ -4,9 +4,15 @@
 {{ with .Params.website }}<a style="display: block;" href="{{ . }}">{{ end }}
 <div class="flex-item-bar"></div>
 {{ .Params.firstname }} {{ .Params.lastname }}
+<span style="color: black;">
+{{ if isset .Params "alumn_info" }}
+  ─ {{ .Params.alumn_info }} 
+{{ else }}
 {{ with .Params.year_left }}
-<span style="color: gray;">, {{ $prms.year_arrived }} ─ {{. }}
+<span style="color: black;"> {{ $prms.year_arrived }} ─ {{. }}
 {{ end}}
+{{ end }}
+</span>
 <br>
-{{ with .Summary }} <span style="color: gray;"> ({{ . }}) </span> {{ end }}
+{{ with .Summary }} <span style="color: gray;"> {{ . }} </span> {{ end }}
 {{ with .Params.website }} </a> {{ end }}
