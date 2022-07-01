@@ -14,7 +14,7 @@ draft: false
 labs: ["hennequin", "cbl"]
 ---
 
-Guillaume is a University Lecturer in Computational Neuroscience. Previously,
+Guillaume is a University Associate Professor in Computational Neuroscience. Previously,
 he did his PhD in Wulfram Gerstner's group at EPFL, Switzerland, followed by a
 postdoc with Máté Lengyel at CBL. He is keen to supervise excellent PhD
 students -- please get in touch!
