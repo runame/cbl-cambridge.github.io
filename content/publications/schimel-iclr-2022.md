@@ -3,7 +3,7 @@ date: 2022-03-16T09:52:57Z
 title: "iLQR-VAE: control-based learning of input-driven dynamics with applications to neural data"
 authors: ["mmcs3", "tck29", "ktj21", "gjeh2"]
 year: "2022"
-publication: "ILCR"
+publication: "ILCR (oral)"
 type: "rconf" # journal / rconf (i.e. refereed conference) / uconf (i.e. unrefereed conference) / thesis / preprint / workshop
 link: "" # link to the publication
 file: "schimel-iclr-2022.pdf" # IF you are NOT able to provide a link, then place a pdf in static/publications/ and write the filename here (e.g. "hennequin-neuron-2018.pdf") 

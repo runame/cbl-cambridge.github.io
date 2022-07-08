@@ -6,6 +6,7 @@ year: "2019"
 publication: "Current Opinion in Neurobiology"
 type: "journal"
 file: "kao-cur-op-neurobiol-2019.pdf"
+illustration: "kao-cur-op-neurobiol-2019.png"
 code: "https://github.com/tachukao/neuro-out-of-control"
 link: "https://www.sciencedirect.com/science/article/abs/pii/S095943881830206X"
 draft: false
