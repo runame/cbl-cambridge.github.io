@@ -16,5 +16,5 @@ labs: ["cbl", "hennequin"]
 draft: false
 ---
 
-now a postdoc with Maneesh Sahani at Gatsby UCL
+now a research scientist at Meta Reality Labs
 
