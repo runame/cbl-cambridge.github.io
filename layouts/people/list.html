@@ -62,7 +62,16 @@
     {{ end }}
 </div>
 {{ end }}
-
+ 
+{{ with $admin }}
+<h1 id="admin">Admin Support</h1>
+<div class="flex-container">
+    {{ range . }}
+    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab) }} </div>
+    {{ end }}
+</div>
+{{ end }}
+ 
 {{ with $postdocs }}
 <h1 id="postdocs">Postdocs</h1>
 <div class="flex-container">
@@ -99,17 +108,9 @@
 </div>
 {{ end }}
 
-{{ with $admin }}
-<h1 id="admin">Admin Support</h1>
-<div class="flex-container">
-    {{ range . }}
-    <div class="person"> {{ partial "list-item-people" (dict "context" . "lab" $lab) }} </div>
-    {{ end }}
-</div>
-{{ end }}
 
 {{ with $alumni }}
-<h1 id="alumni">Alumni</h1>
+<h1 id="alumni">Alumni (on biological side)</h1>
 <div class="flex-container-left">
     {{ range . }}
     <div class="flex-item"> {{ partial "list-item-alumni" . }} </div>
