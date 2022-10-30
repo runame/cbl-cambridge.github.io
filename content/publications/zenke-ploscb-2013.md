@@ -5,11 +5,11 @@ year: "2013"
 authors: ["F Zenke", "gjeh2", "W Gerstner"]
 publication: "PLoS Computational Biology"
 type: "journal" # 1: journal   2: conf   3: preprint
-pdf: "zenke-ploscb-13.pdf"  # place pdf of file in static/publication/
+file: "zenke-ploscb-13.pdf"  # place pdf of file in static/publication/
 code: ""
 link: ""
-draft: false
 labs: ["cbl", "hennequin"]
+draft: false
 ---
 
 Hebbian changes of excitatory synapses are driven by and further enhance

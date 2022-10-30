@@ -5,8 +5,10 @@ year: "2010"
 authors: ["gjeh2", "W Gerstner", "JP Pfister"]
 publication: "Frontiers in Computational Neuroscience"
 type: "journal" 
-pdf: "hennequin-frontiers-2010.pdf"
+link: "https://www.frontiersin.org/articles/10.3389/fncom.2010.00143/full"
+file: ""
 code: ""
+labs: ["cbl", "hennequin"]
 draft: false
 ---
 
