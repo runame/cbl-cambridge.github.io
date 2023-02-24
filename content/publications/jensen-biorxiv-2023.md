@@ -33,3 +33,15 @@ new theory of how the brain could implement planning through
 prefrontal-hippocampal interactions, where hippocampal replays are triggered by
 – and in turn adaptively affect – prefrontal dynamics.
 
+
+<link rel="stylesheet" href="/publications/jensen-biorxiv-2023-demo.css">
+<hr>
+<div><p>Try and play the game ↓ (you will need a keyboard...) You have 20 seconds to explore the maze (which has cyclic boundaries), find the hidden reward, get teleported, and go back to the reward as many times as you can. At the end of the 20s, a new environment will be generated with a new hidden reward location and you can do all this again (again again!).</p>
+
+<p>(If using the up/down arrows annoyingly also scolls the page, try holding the Shift key at the same time.)</p>
+
+</div>
+<br>
+<div style="text-align: center;" id="rl-game-demo"></div>
+<script defer src="/publications/jensen-biorxiv-2023-demo.js"></script> 
+
