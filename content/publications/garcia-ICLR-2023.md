@@ -3,7 +3,7 @@ date: 2023-02-27T14:13:36Z
 title: "Fisher-Legendre (FishLeg) optimization of deep neural networks"
 authors: ["Jezabel R Garcia<sup>*</sup>", "Federica Freddi<sup>*</sup>", "Stathi Fotiadis", "Maolin Li", "Sattar Vakili", "ab2349<sup>*</sup>", "gjeh2<sup>*</sup>"]
 year: "2023"
-publication: "ICLR"
+publication: "ICLR (notable 25%)"
 type: "rconf"
 link: "https://openreview.net/forum?id=c9lAOPvQHS"
 file: ""
