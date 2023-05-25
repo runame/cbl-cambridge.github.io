@@ -4,7 +4,7 @@ title: "When and why does motor preparation arise in recurrent neural network mo
 authors: ["mmcs3", "tck29", "gjeh2"]
 year: "2023"
 publication: "bioRXiv"
-type: "preprint" # journal / rconf (i.e. refereed conference) / uconf (i.e. unrefereed conference) / thesis / preprint / workshop
+type: "journal" # journal / rconf (i.e. refereed conference) / uconf (i.e. unrefereed conference) / thesis / preprint / workshop
 link: "https://www.biorxiv.org/content/10.1101/2023.04.03.535429v1"
 file: ""
 code: ""
