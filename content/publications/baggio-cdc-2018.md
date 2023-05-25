@@ -1,7 +1,7 @@
 ---
 date: 2018-10-26T11:07:17+01:00
 title: "Information transmission in dynamical networks: the normal network case"
-authors: ["G Baggio", "V Rutten", "gjeh2", "S Zampieri"]
+authors: ["G Baggio", "V Ruetten", "gjeh2", "S Zampieri"]
 year: "2018"
 publication: "IEEE Conference on Decision and Control"
 type: "journal" 

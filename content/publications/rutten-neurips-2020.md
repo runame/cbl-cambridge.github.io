@@ -1,13 +1,13 @@
 ---
 date: 2020-10-14T16:40:38+01:00
 title: "Non-reversible Gaussian processes for identifying latent dynamical structure in neural data"
-authors: ["V Rutten", "ab2349", "M Sahani", "gjeh2"]
+authors: ["V Ruetten", "ab2349", "M Sahani", "gjeh2"]
 year: "2020"
 publication: "NeurIPS (oral)"
 type: "rconf" 
 file: "rutten-neurips-2020.pdf"  # place pdf of file in static/publication/
 illustration: "rutten-neurips-2020.png" 
-code: "https://github.com/vrutten/GPFADS"
+code: "https://github.com/vruetten/GPFADS"
 link: ""
 draft: false
 labs: ["cbl", "hennequin"]

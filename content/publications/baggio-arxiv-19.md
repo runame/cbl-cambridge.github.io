@@ -1,7 +1,7 @@
 ---
 date: 2019-04-05T10:25:52+01:00
 title: "Efficient communication over complex dynamical networks"
-authors: ["G Baggio", "V Rutten", "gjeh2<sup>*</sup>", "S Zampieri <sup>*</sup>"]
+authors: ["G Baggio", "V Ruetten", "gjeh2<sup>*</sup>", "S Zampieri <sup>*</sup>"]
 year: "2019"
 publication: "arXiv"
 type: "preprint" 

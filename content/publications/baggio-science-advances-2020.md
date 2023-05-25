@@ -1,7 +1,7 @@
 ---
 date: 2020-05-27T20:53:02+01:00
 title: "Efficient communication over complex dynamical networks: the role of matrix non-normality"
-authors: ["G Baggio", "V Rutten", "gjeh2<sup>*</sup>", "S Zampieri<sup>*</sup>"]
+authors: ["G Baggio", "V Ruetten", "gjeh2<sup>*</sup>", "S Zampieri<sup>*</sup>"]
 year: "2020"
 publication: "Science Advances"
 type: "journal"
