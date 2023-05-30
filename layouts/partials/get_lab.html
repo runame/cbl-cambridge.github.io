@@ -1,6 +1,6 @@
 {{ with .File }}
 {{ $.Scratch.Set "lab" (index (split .Dir "/") 0) }}
 {{ end }}
-{{ if not (in (slice "hennequin" "lengyel" "ahmadian") ($.Scratch.Get "lab")) }}
+{{ if not (in (slice "hennequin" "lengyel" "ahmadian" "dudley") ($.Scratch.Get "lab")) }}
 {{ $.Scratch.Set "lab" "cbl" }}
 {{ end }}

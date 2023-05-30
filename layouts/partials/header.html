@@ -38,6 +38,7 @@
                 <div id="myGroups" class="menu-item dropdown-hidden">
                     <div class="dropdown-container">
                         <a href="/ahmadian">AHMADIAN</a>
+                        <a href="/dudley">DUDLEY</a>
                         <a href="http://mlg.eng.cam.ac.uk/">GHAHRAMANI</a>
                         <a href="/hennequin">HENNEQUIN</a>
                         <a href="https://jmhl.org/">HERNANDEZ-LOBATO</a>
@@ -86,8 +87,12 @@
     <div class="top-image-ahmadian">
     <div class="title"><h1>Neural Sensory Processing Group</h1></div>
     </div>
+    {{ else if eq $lab "dudley" }}
+    <div class="top-image-cbl">
+    <div class="title"><h1>Dudley group</h1></div>
+    </div>
     {{ else }}
-    {{ errorf "$lab not cbl, hennequin, lengyel, or ahmadian : probably need to update /partials/get_lab.html and header.html" }}
+    {{ errorf "$lab not cbl, hennequin, lengyel, dudley or ahmadian : probably need to update /partials/get_lab.html and header.html" }}
     {{ end }}
 
     <div class="main" id="main" style="margin-top:3em;" onclick="menu_off()">

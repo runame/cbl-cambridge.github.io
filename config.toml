@@ -163,3 +163,39 @@ unsafe= true
         name = "VACANCIES"
         pre = "<i class='fi-xnsuxl-file-cv-solid'></i>"
         weight = 6 
+
+    [[menu.dudley]]
+        url = "/"
+        name = "BACK TO CBL HOME"
+        pre = "<img style='float: left; padding: 0em; margin: 0em; height: 2em; transform: translateY(-10%)' src='/favicon.svg'/>"
+        weight = 1
+
+    [[menu.dudley]]
+        url = ""
+        name = "DUDLEY GROUP"
+        pre = ""
+        weight = 2
+
+    [[menu.dudley]]
+        url = "/dudley/"
+        name = "DUDLEY GROUP"
+        pre = "<i class='fi-xnsuxl-home-solid'></i>"
+        weight = 3
+
+    [[menu.dudley]]
+        url = "/dudley/people/"
+        name = "PEOPLE"
+        pre = "<i class='fi-xnsuxl-user-circle-solid'></i>"
+        weight = 4
+
+    [[menu.dudley ]]
+        url = "/dudley/publications/"
+        name = "PUBLICATIONS"
+        pre = "<i class='fi-xwsxxl-graduation-cap-solid'></i>"
+        weight = 5
+
+    [[menu.dudley ]]
+        url = "/dudley/vacancies/"
+        name = "VACANCIES"
+        pre = "<i class='fi-xnsuxl-file-cv-solid'></i>"
+        weight = 6 
